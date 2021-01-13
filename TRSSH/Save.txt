@@ -1,0 +1,48 @@
+ if(element.tagName =='INPUT' ){
+
+    
+      validateLength(element)
+    
+
+      
+      
+       
+      
+/*
+      case 'number':
+      validateNumber(element.value)
+      break;
+
+      switch(element.type){
+    case 'email':
+      validateEmail(element)
+      break;
+  }
+ */
+  } 
+
+  if(element.type =='email' ){
+
+    
+    validateEmail(element)
+  }
+
+  
+
+}
+
+})
+ 
+function validateLength(element){
+  if (element.required){
+    if(element.value.length < 2)
+
+    console.log('a little')
+  }
+  
+}
+
+function validateEmail(element){
+if (element.value == 'email')
+console.log('done')
+}
